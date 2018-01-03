@@ -2,9 +2,16 @@ import React from 'react';
 class Update extends React.Component{
     constructor(){
         super();
+        this.state={
+            id='',
+            name=''
+        }
     }
-    handleid(){
-
+    handleid(e){
+        this.setState({id:e.target.value});
+    }
+    handlename(e){
+        this.setState({name:e.target.value});
     }
     render(){
         return(
