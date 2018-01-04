@@ -10,12 +10,16 @@ class App extends React.Component{
                 {Employee_id :'316474', Name : 'Heena'}
             ]
         }
+        this.updatetable = this.updatetable.bind(this);
+    }
+    updatetable(emp_data){
+        this.setState({emp_data});
     }
     render(){
         return(
             <div>
                 <h2>Employee Table</h2>
-                <Table emp_data={this.state.emp_data}/>
+                <Table emp_data={this.state.emp_data} updatetable={this.updatetable} />
             </div>
         );
     }
