@@ -1,0 +1,10 @@
+
+.submitdata {
+margin : 0px;
+}
+.inputbox {
+    width: 28%;
+    margin : 5px;
+    position: relative;
+    left: -30px;
+}
