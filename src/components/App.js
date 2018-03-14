@@ -18,7 +18,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <Table tableName="Employee" col1="Employee ID" col2="Employee name" emp_data={this.state.emp_data} updatetable={this.updatetable} />
+                <Table tableName="Employees List" col1="Employee ID" col2="Employee name" emp_data={this.state.emp_data} updatetable={this.updatetable} />
             </div>
         );
     }
